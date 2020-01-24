@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def holograms(request):
+    return render(request, 'holograms/index.html', {})
