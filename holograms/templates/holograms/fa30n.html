@@ -31,7 +31,7 @@
 
 
     <!-- Color CSS Styles  -->
-    <link rel="stylesheet" type="text/css" href="assets/css/colors/indigo.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/colors/indigo.css' %}" media="screen" />
 
 
   </head>
@@ -43,7 +43,7 @@
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-              <a class="navbar-brand" href="index.html"><img src="{% static 'images/holo_logotype.png' %}" alt=""></a>
+              <a class="navbar-brand"><img src="{% static 'images/holo_logotype.png' %}" alt=""></a>
             </div>
             <div class="collapse navbar-collapse" id="main-navbar">
               <ul class="navbar-nav mr-auto w-100 justify-content-end">
@@ -115,8 +115,8 @@
                   <div class="col-md-12">
                       <div class="title-center">
                           <div class="title-middle">
-                              <h2 class="page-tagline">Works in details</h2>
-                              <h1 class="page-title">Portfolio Details {{object_id}}</h1>
+                              <h2 class="page-tagline">Подробное описание</h2>
+                              <h1 class="page-title">HoloRay FA30N</h1>
                           </div>
                       </div>
                   </div>
@@ -130,29 +130,21 @@
         <div class="container">
           <div class="row">
             <div class="col-md-8 portfolio-details-iamge wow animated fadeInUp" data-wow-delay=".6s">
-              <img src="{% static '/images/portfolio/portfolio-details.png' %}" class="img-fluid" alt="">
+              <img src="{% static '/images/detail/detailfa30n.jpg' %}" class="img-fluid" alt="">
                 <h2>Описание:</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam laudantium provident cum beatae deserunt, doloribus esse eaque obcaecati, qui aut dicta reprehenderit incidunt, illum aliquid excepturi non inventore optio, ratione. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat dignissimos alias, vel perferendis aut laudantium voluptatem, eius animi tempore voluptatibus enim neque, veniam maxime! Non, ipsa excepturi obcaecati in nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita corrupti rerum ratione. Quisquam accusantium, neque non porro quo voluptatibus nobis quod obcaecati. Laborum nobis, similique rem assumenda at dolor fuga.</p>
             </div>
             <div class="col-md-4 portfolio-details wow animated fadeInUp" data-wow-delay=".6s">
-              <div class="portfolio-category">
-                <a href="#"><i class="material-icons mdi mdi-bookmark-outline"></i> Wordpress Theme</a>
-              </div>
-              <h2>CONBIZ</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              <h2>FA30N</h2>
+              <p>Голографический вентилятор 30 СМ</p>
               <ul class="portfolio-meta clearfix">
-                  <li><span> Client </span> XYZ</li>
-                  <li><span> Created by </span> John Doe</li>
-                  <li><span> Completed on </span> 15 Nov 2017</li>
-                  <li><span> Skills </span> WordPress / PHP / CSS3</li>
-                  <li><span> Share </span>
-                    <a href="#"><i class="mdi mdi-facebook"></i></a>
-                    <a href="#"><i class="mdi mdi-twitter"></i></a>
-                    <a href="#"><i class="mdi mdi-linkedin"></i></a>
-                    <a href="#"><i class="mdi mdi-dribbble"></i></a>
-                  </li>
+                  <li><span> Качество изображения </span> 512x512</li>
+                  <li><span> Диаметр изображения </span> 30 см</li>
+                  <li><span> Управление </span> SD-card, пульт</li>
+                  <li><span> Комплектация </span> защитный корпус, подставка, встроенный аккумулятор</li>
+                  <li><span> Гарантия </span> 6 месяцев</li>
               </ul>
-              <a href="javascript:void(0)" class="mt-3 btn btn-common btn-block"><i class="material-icons mdi mdi-eye"></i> Live Demo<div class="ripple-container"></div></a>
+              <a href="../#contacts" class="mt-3 btn btn-common btn-block"><i class="material-icons mdi mdi-eye"></i> Заказать<div class="ripple-container"></div></a>
             </div>
           </div>
         </div>
@@ -172,33 +164,18 @@
                 <div class="col-md-6 col-lg-4 col-xl-4 pb-4 mix business">
                   <figure class="single-portfolio">
                       <img class="img-fluid" src="{% static '/images/portfolio/work1.jpg' %}" alt="">
-                      <figcaption class="hover-content">
-                          <a class="btn btn-round btn-fab btn-xs" href="portfolio-single.html"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
-                          <a href="portfolio-single.html"><h2 class="subtitle">Business Cards</h2></a>
-                          <p>Asus Inc.</p>
-                      </figcaption>
                   </figure>
               </div>
               <!-- Single Portfolio Image -->
               <div class="col-md-6 col-lg-4 col-xl-4 mix development more">
                   <figure class="single-portfolio">
                       <img class="img-fluid" src="{% static '/images/portfolio/work2.jpg' %}" alt="">
-                      <figcaption class="hover-content">
-                          <a class="btn btn-round btn-fab btn-xs" href="portfolio-single.html"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
-                          <a href="portfolio-single.html"><h2 class="subtitle">Brochure Design</h2></a>
-                          <p>Tesla Motors</p>
-                      </figcaption>
                   </figure>
               </div>
               <!-- Single Portfolio Image -->
               <div class="col-md-6 col-lg-4 col-xl-4 mix creative business">
                   <figure class="single-portfolio">
                       <img class="img-fluid" src="{% static '/images/portfolio/work3.jpg' %}" alt="">
-                      <figcaption class="hover-content">
-                          <a class="btn btn-round btn-fab btn-xs" href="portfolio-single.html"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
-                          <a href="portfolio-single.html"><h2 class="subtitle">Coffee Cup</h2></a>
-                          <p>Starbucks USA</p>
-                      </figcaption>
                   </figure>
               </div>
             </div>
