@@ -20,3 +20,15 @@ def fa85n(request):
 
 def fa100n(request):
     return render(request, 'holograms/fa100n.html', {})
+
+def gobo20(request):
+    return render(request, 'holograms/gobo20.html', {})
+
+def gobo30(request):
+    return render(request, 'holograms/gobo30.html', {})
+
+def gobo50(request):
+    return render(request, 'holograms/gobo50.html', {})
+
+def gobo80(request):
+    return render(request, 'holograms/gobo80.html', {})

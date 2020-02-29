@@ -56,10 +56,14 @@
                   Применение
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#buy" aria-haspopup="true" aria-expanded="false">
+              <li class="nav-item dropdown">
+                <a class="nav-link" aria-haspopup="true" aria-expanded="false">
                   Купить
                 </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item active" href="#buy3d">3d голограммы</a>
+                  <a class="dropdown-item" href="#buygobo">GOBO проекторы</a>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contacts" aria-haspopup="true" aria-expanded="false">
@@ -87,9 +91,17 @@
             </a>
           </li>
           <li>
-            <a href="#buy">
+            <a href="#buy3d">
             Купить
             </a>
+            <ul class="dropdown">
+              <li>
+                <a href="#buy3d">3d голограммы</a>
+              </li>
+              <li>
+                <a href="#buygobo">GOBO проекторы</a>
+              </li>
+            </ul>
           </li>
           <li>
             <a href="#contacts">
@@ -115,19 +127,19 @@
       </ol>
       <div class="carousel-inner" id="description">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="{% static '/images/slider/slider-bg1.jpg' %}" alt="First slide">
+          <img class="d-block w-100" src="{% static '/images/slider/slider1.jpg' %}" alt="First slide">
           <div class="carousel-caption d-md-block">
             <h1 class="animated wow fadeInDown hero-heading" data-wow-delay=".4s">3D Голограммы</h1>
             <h5 class="animated fadeInUp wow hero-sub-heading" data-wow-delay=".6s">Инновационное рекламное оборудование</h5>
-            <a href="#contacts" class="animated fadeInUp wow btn btn-common" data-wow-delay=".8s"><i class="material-icons mdi mdi-cart-outline"></i>Купить<div class="ripple-container"></div></a>
+            <a href="#buy3d" class="animated fadeInUp wow btn btn-common" data-wow-delay=".8s"><i class="material-icons mdi mdi-cart-outline"></i>Купить<div class="ripple-container"></div></a>
           </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="{% static '/images/slider/slider-bg2.jpg' %}" alt="Second slide">
+          <img class="d-block w-100" src="{% static '/images/slider/slider2.jpg' %}" alt="Second slide">
           <div class="carousel-caption d-md-block">
             <h1 class="animated wow fadeInLeft hero-heading" data-wow-delay=".7s">GOBO проекторы</h1>
             <h5 class="animated wow fadeInRight hero-sub-heading" data-wow-delay=".9s">Яркая реклама Вашего бизнеса на любой поверхности</h5>
-            <a href="#contacts" class="animated fadeInUp wow btn btn-common" data-wow-delay=".6s"><i class="material-icons mdi mdi-cart-outline"></i> Купить</a>
+            <a href="#buygobo" class="animated fadeInUp wow btn btn-common" data-wow-delay=".6s"><i class="material-icons mdi mdi-cart-outline"></i> Купить</a>
           </div>
         </div>
         <a class="carousel-control-prev" href="#main-slide" role="button" data-slide="prev">
@@ -278,12 +290,12 @@
     <!-- Services Section End -->
 
     <!-- Our BLog Section -->
-    <section class="Material-blog-section section-padding" id="buy">
+    <section class="Material-blog-section section-padding" id="buy3d">
       <div class="container">
         <div class="row">
             <!-- Section Titile -->
           <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
-            <h1 class="section-title">Купить</h1>
+            <h1 class="section-title">Купить 3d голограммы</h1>
           </div>
         </div>
     
@@ -427,6 +439,77 @@
           </div>
       </div>
 
+      <div class="row">
+        <!-- FA70N -->
+        <div class="col-md-6 col-lg-4 col-xl-4 wow animated fadeInUp" data-wow-delay=".4s">
+          <article class="single-blog-post">
+              <div class="featured-image">
+                  <a href="{% url 'fa70n' %}">
+                      <img src="{% static '/images/hologram_photo/F270H_2.png' %}" alt="">
+                  </a>
+              </div>
+              <div class="post-meta">
+                  <a href="{% url 'fa70n' %}"><h2 class="subtitle">Голографический вентилятор 70 СМ</h2></a>
+                  <p>ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ:<br>
+                    Разрешение: 1024*1024<br>
+                    Размер изображения: 70*70 см<br>
+                    Вес: 1,5 кг<br>
+                    Управление: Wi-Fi</p>
+              </div>
+              <div class="meta-tags">
+                <span class="comments"><a href="{% url 'fa70n' %}">59 000 ₽</a></span>
+                <a class="btn btn-round btn-fab" href="{% url 'fa70n' %}"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
+              </div>
+          </article>
+        </div>
+
+        <!-- FA85N -->
+        <div class="col-md-6 col-lg-4 col-xl-4 wow animated fadeInUp" data-wow-delay=".5s">
+          <article class="single-blog-post">
+              <div class="featured-image">
+                  <a href="{% url 'fa85n' %}">
+                      <img src="{% static '/images/hologram_photo/FA85_N2.jpg' %}" alt="">
+                  </a>
+              </div>
+              <div class="post-meta">
+                  <a href="{% url 'fa85n' %}"><h2 class="subtitle">Голографический вентилятор 85 СМ</h2></a>
+                  <p>ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ:<br>
+                    Разрешение: 1024*1024<br>
+                    Размер изображения: 85*85 см<br>
+                    Вес: 1,5 кг<br>
+                    Управление: Wi-Fi, sd card, пульт</p>
+              </div>
+              <div class="meta-tags">
+                <span class="comments"><a href="{% url 'fa85n' %}">69 000 ₽</a></span>
+                <a class="btn btn-round btn-fab" href="{% url 'fa85n' %}"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
+              </div>
+          </article>
+        </div>
+
+        <!-- FA100N -->
+        <div class="col-md-6 col-lg-4 col-xl-4 wow animated fadeInUp" data-wow-delay=".5s">
+            <article class="single-blog-post">
+                <div class="featured-image">
+                    <a href="{% url 'fa100n' %}">
+                        <img src="{% static '/images/hologram_photo/FA100N_1.png' %}" alt="">
+                    </a>
+                </div>
+                <div class="post-meta">
+                    <a href="{% url 'fa100n' %}"><h2 class="subtitle">Голографический вентилятор 100 СМ</h2></a>
+                    <p>ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ:<br>
+                      Разрешение: 1024*1024<br>
+                      Размер изображения: 90*90 см<br>
+                      Вес: 1,5 кг<br>
+                      Управление: Wi-Fi, sd card, пульт</p>
+                </div>
+                <div class="meta-tags">
+                  <span class="comments"><a href="{% url 'fa100n' %}">140 000 ₽</a></span>
+                  <a class="btn btn-round btn-fab" href="{% url 'fa100n' %}"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
+                </div>
+            </article>
+        </div>
+      </div>
+
       <div class="row mt-5 wow animated fadeInUp" data-wow-delay=".6s">
         <div class="col-md-12 text-center">
             <a href="#contacts" class="animated4 btn btn-common" data-ripple-color="#000"><i class="material-icons mdi mdi-cart-outline"></i>КУПИТЬ<div class="ripple-container"></div></a>
@@ -434,6 +517,113 @@
       </div>
     </section>
     <!-- Our BLog Section End -->
+
+    <!-- GOBO Projectors -->
+    <section class="Material-blog-section section-padding" id="buygobo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+            <h1 class="section-title">Купить GOBO проекторы</h1>
+          </div>
+        </div>
+    
+        <div class="row">
+          <!-- 20W -->
+          <div class="col-md-4 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".4s">
+            <article class="single-blog-post">
+                <div class="featured-image">
+                    <a href="{% url 'gobo20' %}">
+                        <img src="{% static '/images/gobo/gobo1.jpg' %}" alt="">
+                    </a>
+                </div>
+                <div class="post-meta">
+                    <a href="{% url 'gobo20' %}"><h2 class="subtitle">GOBO 20W</h2></a>
+                    <p>ХАРАКТЕРИСТИКИ:<br>
+                      Мощность: 20 Вт<br>
+                      Применение: интерьер (IP20)<br>
+                      Рабочее расстояние: 1-10м<br>
+                      Управление: пульт ДУ</p>
+                </div>
+                <div class="meta-tags">
+                  <span class="comments"><a href="{% url 'gobo20' %}">6 500 ₽</a></span>
+                  <a class="btn btn-round btn-fab" href="{% url 'gobo20' %}"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
+                </div>
+            </article>
+          </div>
+          <!-- 30W -->
+          <div class="col-md-4 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".3s">
+              <article class="single-blog-post">
+                  <div class="featured-image">
+                      <a href="{% url 'gobo30' %}">
+                          <img src="{% static '/images/gobo/gobo2.jpg' %}" alt="">
+                      </a>
+                  </div>
+                  <div class="post-meta">
+                      <a href="{% url 'gobo30' %}"><h2 class="subtitle">GOBO 30W</h2></a>
+                      <p>ХАРАКТЕРИСТИКИ:<br>
+                        Мощность: 30 Вт<br>
+                        Применение: интерьер (IP65)<br>
+                        Рабочее расстояние: 2-20м<br>
+                        Управление: пульт ДУ</p>
+                    </div>
+                  <div class="meta-tags">
+                    <span class="comments"><a href="{% url 'gobo30' %}"></i>9 000 ₽</a></span>
+                    <a class="btn btn-round btn-fab" href="{% url 'gobo30' %}"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
+                  </div>
+              </article>
+          </div>
+          <!-- 50W -->
+          <div class="col-md-4 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".3s">
+            <article class="single-blog-post">
+                <div class="featured-image">
+                    <a href="{% url 'gobo50' %}">
+                        <img src="{% static '/images/gobo/gobo3_1.jpg' %}" alt="">
+                    </a>
+                </div>
+                <div class="post-meta">
+                    <a href="{% url 'gobo50' %}"><h2 class="subtitle">GOBO 50W</h2></a>
+                    <p>ХАРАКТЕРИСТИКИ:<br>
+                      Мощность: 50 Вт<br>
+                      Применение: уличное (IP65)<br>
+                      Рабочее расстояние: 2-50м<br>
+                      Управление: пульт ДУ</p>
+                  </div>
+                <div class="meta-tags">
+                  <span class="comments"><a href="{% url 'gobo50' %}"></i>11 500 ₽</a></span>
+                  <a class="btn btn-round btn-fab" href="{% url 'gobo50' %}"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
+                </div>
+            </article>
+          </div>
+          <!-- 80W -->
+          <div class="col-md-4 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".3s">
+            <article class="single-blog-post">
+                <div class="featured-image">
+                    <a href="{% url 'gobo80' %}">
+                        <img src="{% static '/images/gobo/gobo4.png' %}" alt="">
+                    </a>
+                </div>
+                <div class="post-meta">
+                    <a href="{% url 'gobo80' %}"><h2 class="subtitle">GOBO 80W</h2></a>
+                    <p>ХАРАКТЕРИСТИКИ:<br>
+                      Мощность: 80 Вт<br>
+                      Применение: уличное (IP65)<br>
+                      Рабочее расстояние: 2-50м<br>
+                      Управление: пульт ДУ</p>
+                  </div>
+                <div class="meta-tags">
+                  <span class="comments"><a href="{% url 'gobo80' %}"></i>18 000 ₽</a></span>
+                  <a class="btn btn-round btn-fab" href="{% url 'gobo80' %}"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
+                </div>
+            </article>
+          </div>
+        </div>
+
+      <div class="row mt-5 wow animated fadeInUp" data-wow-delay=".6s">
+        <div class="col-md-12 text-center">
+            <a href="#contacts" class="animated4 btn btn-common" data-ripple-color="#000"><i class="material-icons mdi mdi-cart-outline"></i>КУПИТЬ<div class="ripple-container"></div></a>
+        </div>
+      </div>
+    </section>
 
     <!-- work-counter area -->
     <section class="work-counter-section section-padding">
