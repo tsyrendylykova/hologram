@@ -4,7 +4,5 @@ from django.utils import timezone
 
 
 class Client(models.Model):
-	name = models.TextField()
-	text = models.TextField()
+	name = models.CharField(max_length=100)
 	phone = models.CharField(max_length=20)
-	email = models.TextField()

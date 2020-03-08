@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-	'holograms'
+	# 'holograms',
+    'holograms.apps.HologramsConfig',
 ]
 
 MIDDLEWARE = [
@@ -120,3 +121,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'holoray@yandex.ru'
+EMAIL_HOST_PASSWORD = 'holoray96'
+DEFAULT_FROM_EMAIL = 'Holoray'
+DEFAULT_TO_EMAIL = 'sampil2016@yandex.ru'
