@@ -25,7 +25,7 @@ SECRET_KEY = '%53o&b)w%gv6mv7)fbjcpr!mbv17$z%5jzgo(=!=l3+mybldxy'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'tsyrendylykova.pythonanywhere.com', 'feelFit.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'tsyrendylykova.pythonanywhere.com', 'feelFit.pythonanywhere.com', 'www.holoproject.ru', 'holoproject.ru']
 
 
 # Application definition
