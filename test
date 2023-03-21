@@ -1,6 +1,12 @@
 {
    "app_info" : {
-     "systemName" : "any"
+     "projectId": "2c96f0b4-4be9-4fb6-b80f-f7f83395042e",
+     "applicationId": "d7c7178e-99d8-4192-962f-34c3940a6fdf",
+     "appversionId": "672af7be-23d8-4d9c-95a2-f3e72c722145",
+     "systemName": "music",
+     "frontendEndpoint": "ru.sberdevices.music",
+     "frontendType": "EMBEDDED_APP",
+     "frontendStateId": "2c96f0b4-4be9-95a2-f3e72c722145"
    },
   "items" : [
     {
