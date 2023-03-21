@@ -8,8 +8,8 @@
     {
       "command" : {
         "app_info" : {
-					"systemName" : "any"
-				},
+          "systemName" : "any"
+        },
         "smart_app_data" : {
           "command" : "ShowLauncherContent",
           "widgets" : [
