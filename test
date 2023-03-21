@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "bubble": {
+        "text": "Команда с server action"
+      }
+    },
+    "command" : {
+        "smart_app_data" : {
+          "command" : "ShowLauncherContent",
+          "widgets" : [
+            {
+    {
+      "command" : {
+        "smart_app_data" : {
+          "command" : "ShowLauncherContent",
+          "widgets" : []
+        },
+        "type" : "smart_app_data"
+      }
+    }
+  ]
+}
