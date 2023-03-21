@@ -2,7 +2,7 @@
   "items" : [
     {
       "bubble": {
-        "text": "Команда с server action"
+        "text": "Команда с server action TEST"
       }
     },
     {
@@ -63,7 +63,7 @@
                                 "top" : "2x"
                               },
                               "max_lines" : 5,
-                              "text" : "Последние операции по карте",
+                              "text" : "TEST Последние операции по карте",
                               "text_color" : "default",
                               "typeface" : "headline3",
                               "use_hyphen" : true
@@ -74,7 +74,7 @@
                                 "top" : "2x"
                               },
                               "max_lines" : 2,
-                              "text" : "История операций",
+                              "text" : "TEST История операций",
                               "text_color" : "secondary",
                               "typeface" : "caption",
                               "use_hyphen" : true
