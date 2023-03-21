@@ -1,13 +1,30 @@
 {
-   "app_info":{
-      "projectId":"2c96f0b4-4be9-4fb6-b80f-f7f83395042e",
-      "applicationId":"d7c7178e-99d8-4192-962f-34c3940a6fdf",
-      "appversionId":"672af7be-23d8-4d9c-95a2-f3e72c722145",
-      "systemName":"music",
-      "frontendEndpoint":"ru.sberdevices.music",
-      "frontendType":"EMBEDDED_APP",
-      "frontendStateId":"2c96f0b4-4be9-95a2-f3e72c722145"
-   },
+    "app_info" : {
+      "affiliationType" : "INTERNAL",
+      "ageLimit" : 0,
+      "allowFastRunApp" : false,
+      "apkInfo" : {
+
+      },
+      "appearance" : {
+        "header" : {
+          "title" : "launcher"
+        }
+      },
+      "applicationId" : "3e97a373-15f6-4758-996b-2f1169a2896b",
+      "appversionId" : "12576d99-ab1f-402d-bf77-77a139fc1d3f",
+      "availableOrientations" : [
+
+      ],
+      "frontendEndpoint" : null,
+      "frontendStateId" : "4db82831-e57b-42ad-b45e-323964ae01b4_3e97a373-15f6-4758-996b-2f1169a2896b_12576d99-ab1f-402d-bf77-77a139fc1d3f",
+      "frontendType" : "EMBEDDED_APP",
+      "projectId" : "4db82831-e57b-42ad-b45e-323964ae01b4",
+      "securityAccess" : {
+
+      },
+      "systemName" : "launcher"
+    },
    "items":[
       {
          "bubble":{
