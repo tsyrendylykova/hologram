@@ -7,6 +7,9 @@
     },
     {
       "command" : {
+        "app_info" : {
+					"systemName" : "any"
+				},
         "smart_app_data" : {
           "command" : "ShowLauncherContent",
           "widgets" : [
