@@ -1,4 +1,7 @@
 {
+   "app_info" : {
+     "systemName" : "any"
+   },
   "items" : [
     {
       "bubble": {
