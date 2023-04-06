@@ -40,6 +40,96 @@
                "command":"ShowLauncherContent",
                "widgets":[
                   {
+                   "cells" : [
+                     {
+                       "content" : {
+                         "text" : "Чат с оператором",
+                         "text_color" : "default",
+                         "typeface" : "headline3"
+                       },
+                       "paddings" : {
+                         "left" : "8x",
+                         "right" : "8x",
+                         "top" : "8x"
+                       },
+                       "type" : "text_cell_view"
+                     },
+                     {
+                       "badge" : {
+                         "color" : "solid_warning"
+                       },
+                       "icon" : {
+                         "address" : {
+                           "type" : "url",
+                           "url" : "https:\/\/cdn.sberdevices.ru\/catalog\/images\/dialog_card_operator_icon.png"
+                         },
+                         "margins" : {
+                           "right" : "6x"
+                         },
+                         "size" : {
+                           "height" : "medium",
+                           "width" : "medium"
+                         }
+                       },
+                       "paddings" : {
+                         "left" : "8x",
+                         "right" : "8x",
+                         "top" : "6x"
+                       },
+                       "placeholder" : {
+                         "text" : "Чат с оператором",
+                         "text_color" : "default",
+                         "typeface" : "body1"
+                       },
+                       "subtitle" : {
+                         "margins" : {
+                           "top" : "2x"
+                         },
+                         "style" : {
+                           "text_color" : "default",
+                           "typeface" : "body1"
+                         }
+                       },
+                       "title" : {
+                         "style" : {
+                           "text_color" : "secondary",
+                           "typeface" : "footnote1"
+                         }
+                       },
+                       "type" : "operator_chat_cell_view"
+                     },
+                     {
+                       "content" : {
+                         "actions" : [
+                           {
+                             "deep_link" : "{{ open_chat_deeplink }}&internal_source=audiohelper689_active_chat_launcher",
+                             "type" : "deep_link"
+                           }
+                         ],
+                         "margins" : {
+                           "bottom" : "6x",
+                           "left" : "9x",
+                           "right" : "9x",
+                           "top" : "6x"
+                         },
+                         "style" : "default",
+                         "text" : "Открыть",
+                         "type" : "accept",
+                         "typeface" : "button2"
+                       },
+                       "paddings" : {
+                         "bottom" : "8x",
+                         "left" : "8x",
+                         "right" : "8x",
+                         "top" : "6x"
+                       },
+                       "type" : "button_cell_view"
+                     }
+                   ],
+                   "log_id" : "chat",
+                   "type" : "list_card"
+                 },
+                  {
                      "cell":{
                         "left":{
                            "texts":{
