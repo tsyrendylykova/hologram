@@ -102,7 +102,7 @@
                        "content" : {
                          "actions" : [
                            {
-                             "deep_link" : "{{ open_chat_deeplink }}&internal_source=audiohelper689_active_chat_launcher",
+                             "deep_link" : "sbolonline://messenger/sberchat?entrypoint=assistant&opendialog=true&internal_source=audiohelper689_open_chat",
                              "type" : "deep_link"
                            }
                          ],
